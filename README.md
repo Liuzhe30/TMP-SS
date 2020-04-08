@@ -7,4 +7,4 @@ A Deep Learning-Based Predictor for Secondary Structure Prediction of Alpha-heli
 We provide the test dataset used in this study,  you can download TEST.fasta to evaluate our method.
 
 ## Progress
-- [x] README for running TMP-SSurface-2.0.
+- [x] README for running TMP-SS.
