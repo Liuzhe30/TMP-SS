@@ -1,10 +1,4 @@
 # -*- coding:utf-8 -*-
-'''
-	File Name：     runHHblits
-	Description :   generate HHblits features of fasta files
-	Author :        Liu Zhe
-	date：          2020/2/21
-'''
 import os
 
 class HHblits():
@@ -13,10 +7,10 @@ class HHblits():
         for each_item in names:
             pdb_id = each_item.split('.')[0]
             '''
-            database used: pdb70 released on 2020/2/19 downloaded on 2020/2/20 
-            link: http://wwwuser.gwdg.de/~compbiol/data/hhsuite/databases/hhsuite_dbs/pdb70_from_mmcif_200219.tar.gz 
+            database used: uniprot20
+            link: http://wwwuser.gwdg.de/~compbiol/data/hhsuite/databases/hhsuite_dbs/
             '''
-            cmd = '/home/ThirdPartTools/hh-suite/build/bin/hhblits -i '+ fastapath + '/' + each_item + ' -ohhm ' + outpath + '/' + pdb_id + '.hhm -d /home/RaidDisk/hh-suite/databases/pdb70_from_mmcif_200219/pdb70 -v 0 -maxres 40000 -Z 0'
+            cmd = '/home/lznenu/hh-suite/build/bin/hhblits -i '+ fastapath + '/' + each_item + ' -ohhm ' + outpath + '/' + pdb_id + '.hhm -d /home/lznenu/hh-suite/databases/uniprot20_2016_02/uniprot20_2016_02 -v 0 -maxres 40000 -Z 0'
             os.system(cmd)
       
       
@@ -30,8 +24,8 @@ if __name__ == '__main__':
     Warning : the permissions issue has not been resolved, please use the filepath under /home/RaidDisk/ as your outpath
     '''
     
-    fastapath = '/home/liuzhe002/2_gamma_turn/HHFasta'
-    outpath = '/home/RaidDisk/liuzhe002/2_gamma_turn/HHResults'
+    fastapath = '/home/lznenu/ss_topo/test'
+    outpath = '/home/lznenu/ss_topo/ali_HHResults'
     
     hh = HHblits()
     hh.runHHblits(fastapath, outpath)
