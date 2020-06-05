@@ -11,7 +11,7 @@ We provide the test dataset used in this study,  you can download TEST.fasta to 
 ### Requirements
 - Python ≥ 3.6
 - Tensorflow and Keras
-- HH-suite for generating HHblits files (with the file suffix of .hmm)
+- HH-suite for generating HHblits files (with the file suffix of .hhm)
 
 ### Testing & Evaluation in Command Line
 We provide run.py that is able to run pre-trained models. Run it with:
