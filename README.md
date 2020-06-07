@@ -13,6 +13,11 @@ We provide the test dataset used in this study,  you can download TEST.fasta to 
 - Tensorflow and Keras
 - HH-suite for generating HHblits files (with the file suffix of .hhm)
 
+### Download TMPSS
+```
+git-lfs clone https://github.com/Liuzhe30/TMP-SS.git
+```
+
 ### Testing & Evaluation in Command Line
 We provide run.py that is able to run pre-trained models. Run it with:
 ```
