@@ -30,3 +30,9 @@ python run.py -f sample/sample.fasta -p sample/hhblits/ -o results/
 
 ## Progress
 - [x] README for running TMP-SS.
+
+## Citation
+Please cite the following paper for using this code: 
+```
+Liu Z, Gong Y, Bao Y, Guo Y, Wang H, Lin GN. TMPSS: A Deep Learning-Based Predictor for Secondary Structure and Topology Structure Prediction of Alpha-Helical Transmembrane Proteins. Front Bioeng Biotechnol. 2021 Jan 25;8:629937. doi: 10.3389/fbioe.2020.629937. PMID: 33569377; PMCID: PMC7869861.
+```
