@@ -15,8 +15,9 @@ We provide the test dataset used in this study,  you can download TEST.fasta to 
 
 ### Download TMP-SS
 ```
-git-lfs clone https://github.com/Liuzhe30/TMP-SS.git
+git clone https://github.com/Liuzhe30/TMP-SS.git
 ```
+You can download the model weights from [OneDrive url](https://1drv.ms/u/s!AjoZI2sogng51Dxxmfn2DPL79ft5?e=wcBXbe).
 
 ### Test & Evaluate in Command Line
 We provide run.py that is able to run pre-trained models. Run it with:
